@@ -8,5 +8,5 @@ export function* increaseWatcher(action: ChangeCountAction) {
 }
 
 export function* counterSaga() {
-  yield takeEvery(increase({} as any).type, increaseWatcher);
+  yield takeEvery(increase.type, increaseWatcher);
 }

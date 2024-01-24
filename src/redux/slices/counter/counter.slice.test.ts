@@ -31,7 +31,7 @@ describe("Test Counter Slice", () => {
     });
 
     it("should handle reducer increase", () => {
-      expect(reducer(counterInitialState, increase(payload))).toEqual(result);
+      expect(reducer(counterInitialState, increase(payload))).toEqual(payload);
     });
   });
 

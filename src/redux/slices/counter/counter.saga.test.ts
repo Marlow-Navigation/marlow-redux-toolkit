@@ -28,7 +28,7 @@ describe("Test counter sagas", () => {
       const gen = counterSaga();
 
       expect(gen.next().value).toEqual(
-        takeEvery(increase({} as any).type, increaseWatcher)
+        takeEvery(increase.type, increaseWatcher)
       );
     });
   });
